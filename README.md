@@ -1,5 +1,5 @@
 ## COURS : https://frameworks.java.m1.miage.dev/apache-camel/intro.html
-## EXO : https://frameworks.java.m1.miage.dev/apache-camel/transforming-messages.html#convertir-son-objet-en-bean-json-avec-jaxb
+## EXO : https://frameworks.java.m1.miage.dev/apache-camel/transforming-messages.html
 
 # camel-tutorial
 

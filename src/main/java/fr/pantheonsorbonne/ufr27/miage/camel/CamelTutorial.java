@@ -15,6 +15,9 @@ public class CamelTutorial extends RouteBuilder {
 
 	@Override
 	public void configure() {
-		from("sjms2:M1.prices-"+userName).to("file:data/product-bean");
+		from("sjms2:M1.prices-"+userName)//
+				.unmarshal().json()
+				.marshal().jacksonXml()
+				.to("file:data/product-bean");
 	}
 }
