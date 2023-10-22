@@ -1,5 +1,5 @@
 ## COURS : https://frameworks.java.m1.miage.dev/apache-camel/intro.html
-## EXO : https://frameworks.java.m1.miage.dev/apache-camel/consuming-and-producing.html
+## EXO : https://frameworks.java.m1.miage.dev/apache-camel/processing-messages.html
 
 # camel-tutorial
 
