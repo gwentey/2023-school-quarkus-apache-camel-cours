@@ -40,8 +40,9 @@ public class PriceConsumer implements Runnable {
 			try (JMSContext context = connectionFactory.createContext(Session.AUTO_ACKNOWLEDGE)) {
 				//reçoit un message à partir de la queue queue/prices
 				Message mess = context.createConsumer(context.createQueue("M1.prices-vat-"+userName)).receive();
+
 				//converti ce message en int
-				double price = Integer.parseInt(mess.getBody(String.class));
+				double price = Double.parseDouble(mess.getBody(String.class));
 				//affiche le résultat dans la console
 				System.out.println("from the consumer: " + price);
 
