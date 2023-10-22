@@ -1,5 +1,5 @@
 ## COURS : https://frameworks.java.m1.miage.dev/apache-camel/intro.html
-## EXO : https://frameworks.java.m1.miage.dev/apache-camel/processing-messages.html#utilisation-de-la-dsl-java-pour-simplifier-le-routage
+## EXO : https://frameworks.java.m1.miage.dev/apache-camel/transforming-messages.html#convertir-son-objet-en-bean-json-avec-jaxb
 
 # camel-tutorial
 

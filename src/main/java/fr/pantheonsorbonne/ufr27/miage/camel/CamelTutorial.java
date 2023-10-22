@@ -15,23 +15,6 @@ public class CamelTutorial extends RouteBuilder {
 
 	@Override
 	public void configure() {
-		from("sjms2:M1.prices-" + userName).process(new VATProcessor())
-				.choice()
-				.when(header("productType").isEqualTo(ProductType.BASE.name()))
-				.to("sjms2:M1.product-BASE-" + userName)
-				.when(header("productType").isEqualTo(ProductType.LUXURY.name()))
-				.to("sjms2:M1.product-LUXURY" + userName);
-
-
-	}
-
-	private static class VATProcessor implements Processor {
-		@Override
-		public void process(Exchange exchange) throws Exception {
-			ProductType type = ProductType.valueOf(exchange.getMessage().getHeader("productType").toString());
-			double price = Double.parseDouble(exchange.getMessage().getBody(String.class));
-			exchange.getMessage().setBody("" + price * type.getVatRate());
-
-		}
+		from("sjms2:M1.prices-"+userName).to("file:data/product-bean");
 	}
 }
