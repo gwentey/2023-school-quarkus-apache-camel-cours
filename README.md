@@ -1,5 +1,6 @@
 ## COURS : https://frameworks.java.m1.miage.dev/apache-camel/intro.html
 ## EXO : https://frameworks.java.m1.miage.dev/apache-camel/transforming-messages.html
+## LE TP : https://frameworks.java.m1.miage.dev/apache-camel/activities.html
 
 # camel-tutorial
 
